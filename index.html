@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>expense tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 style="text-align: center; margin-top:10px">Expense Tracker</h2>
+        <div class="result" >
+            <div id="your_balance">
+                <p style="padding:10px ; font-size: 20px;">Your balance</p>
+                <h1 id="balance">0</h1>
+            </div>
+            <div id="in_out">
+                <div class="transaction_block" id="in">
+                    <p style=" padding:7px;font-size: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:rgb(75, 136, 13)">Income</p>
+                    <div style="color:rgb(75, 136, 13)" id="in_amount">0</div>
+                </div>
+                <div class="transaction_block" id="out">
+                    <p style=" padding:7px;font-size: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:rgb(139, 9, 9)">Expenses</p>
+                    <div style="color:rgb(139, 9, 9)" id="out_amount">0</div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class ="transactions" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;">
+                <h3 style="padding:10px">Transactions</h3>
+                <ul class="trnsactn">
+                    <!-- <li class="add_in_out">hello
+                        <span>1000</span>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="add_transaction">
+                <form style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                    <h3 style="padding:10px">Add Transaction</h3>
+                    <label for="description">
+                    <h4 style="padding:10px">description</h4>
+                    <input style="width:60% ; height:25px;border-radius: 3px;border:none;"type="text" placeholder=" enter description" id="description">
+                    </label>
+                    <label for="amount">
+                    <h4 style="padding:10px">amount</h4>
+                    <input style="width:60% ; height:25px;border-radius: 3px;border:none;" type="number" placeholder=" enter amount" id="amount" required >
+                    <p style="margin-top:10px; color: rgba(49, 46, 46, 0.851)">use negative for expenses</p>
+                    </label>
+                    <button style="width:50% ;height:28px; margin-top:10px;background-color: rgb(180, 218, 143); position:relative;top:170px;border-radius: 10px; margin-left:10px"id="transaction_btn">Add transaction</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/coco_expense_tracker/logic.js"></script>
+</body>
+</html>
